@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Windsor & Co. | Connecting Ideas. Creating Opportunities.</title>
+<meta name="description" content="Windsor & Co. connects organizations, educational communities and businesses through workshops, events, sponsorships and strategic partnerships.">
+<meta property="og:title" content="Windsor & Co. | Connecting Ideas. Creating Opportunities.">
+<meta property="og:description" content="Windsor & Co. connects organizations, educational communities and businesses through workshops, events, sponsorships and strategic partnerships.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://[your-domain]/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Windsor & Co.","slogan":"Connecting Ideas. Creating Opportunities.","areaServed":"BD"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafaf8;--bg2:#f0efeb;--ink:#111214;--mut:#5b5e64;--line:#dcdbd6;--acc:#9a7b4f;--inv:#111214;--invt:#fafaf8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1012;--bg2:#17181b;--ink:#f2f1ed;--mut:#a3a6ac;--line:#2b2d31;--acc:#c9a76e;--inv:#f2f1ed;--invt:#0f1012}}
+:root[data-theme="dark"]{--bg:#0f1012;--bg2:#17181b;--ink:#f2f1ed;--mut:#a3a6ac;--line:#2b2d31;--acc:#c9a76e;--inv:#f2f1ed;--invt:#0f1012}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Manrope,Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.w{width:min(1200px,100% - 2.5rem);margin-inline:auto}
+h1,h2,h3{line-height:1.05;letter-spacing:-.03em;margin:0;font-weight:700}
+h1{font-size:clamp(2.6rem,8.5vw,6.4rem)}
+h2{font-size:clamp(1.9rem,4.6vw,3.4rem)}
+h3{font-size:1.25rem;letter-spacing:-.01em;line-height:1.25}
+p{margin:0}.mut{color:var(--mut)}
+.eyebrow{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:1.2rem;display:flex;gap:.7rem;align-items:center}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--acc)}
+section{padding:clamp(4rem,10vw,8rem) 0}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.5rem;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--ink);background:var(--inv);color:var(--invt);cursor:pointer;font-family:inherit;transition:transform .25s,gap .25s,background .25s}
+.btn:hover{gap:.9rem;transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--bg2)}
+.row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;transition:background .3s,border-color .3s,box-shadow .3s;border-bottom:1px solid transparent}
+header.s{background:color-mix(in srgb,var(--bg) 94%,transparent);border-color:var(--line);box-shadow:0 6px 24px -18px #0006;backdrop-filter:blur(10px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:.7rem;text-decoration:none;font-weight:800;letter-spacing:-.02em}
+.logo svg{width:34px;height:34px}
+.links{display:flex;gap:1.6rem;align-items:center}
+.links a{text-decoration:none;font-size:.9rem;font-weight:500;color:var(--mut);position:relative;padding:.3rem 0}
+.links a[aria-current=page],.links a:hover{color:var(--ink)}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-2px;height:1px;width:100%;background:var(--acc);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.links a[aria-current=page]::after,.links a:hover::after{transform:scaleX(1)}
+.links .btn{color:var(--invt);padding:.6rem 1.1rem}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;color:var(--ink);cursor:pointer}
+@media(max-width:940px){
+.burger{display:grid;place-items:center}
+.links{position:fixed;inset:0;top:calc(72px + env(safe-area-inset-top,0px));background:var(--bg);flex-direction:column;align-items:flex-start;padding:2rem 1.5rem;gap:1.2rem;opacity:0;visibility:hidden;transform:translateY(-8px);transition:.3s}
+.links.o{opacity:1;visibility:visible;transform:none}
+.links a{font-size:1.6rem;color:var(--ink);font-weight:600}
+.links .btn{font-size:1rem;margin-top:1rem}}
+#hero{position:relative;padding:clamp(3rem,9vw,7rem) 0 clamp(4rem,9vw,7rem);overflow:hidden}
+#cv{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+#hero .w{position:relative;z-index:1}
+#hero h1 span{color:var(--acc)}
+.lead{font-size:clamp(1.05rem,2vw,1.3rem);max-width:56ch;color:var(--mut);margin-top:1.8rem}
+.split{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(2rem,6vw,6rem);align-items:start}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+.pillars{border-top:1px solid var(--line)}
+.pil{display:grid;grid-template-columns:70px 1fr 1.4fr;gap:1.5rem;padding:1.6rem 0;border-bottom:1px solid var(--line);align-items:baseline;transition:padding .3s}
+.pil:hover{padding-left:.8rem}
+.pil b{font-size:.8rem;color:var(--acc);letter-spacing:.1em}
+.pil h3{font-size:clamp(1.4rem,3vw,2rem)}
+@media(max-width:700px){.pil{grid-template-columns:44px 1fr}.pil p{grid-column:2}}
+.alt{background:var(--bg2)}
+.svc{display:grid;grid-template-columns:repeat(12,1fr);gap:1.2rem;margin-top:3rem}
+.card{border:1px solid var(--line);padding:2rem;border-radius:4px;background:var(--bg);transition:border-color .3s,transform .3s;position:relative}
+.card:hover{border-color:var(--acc);transform:translateY(-3px)}
+.card .n{font-size:.8rem;color:var(--acc);font-weight:700;letter-spacing:.1em}
+.card h3{margin:.8rem 0}
+.card ul{margin:1rem 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:.4rem}
+.card li{font-size:.8rem;border:1px solid var(--line);padding:.25rem .7rem;border-radius:99px;color:var(--mut)}
+.c7{grid-column:span 7}.c5{grid-column:span 5}.c6{grid-column:span 6}
+.dark{background:var(--inv);color:var(--invt)}.dark .mut,.dark .lead{color:color-mix(in srgb,var(--invt) 65%,transparent)}
+.dark .card{background:transparent;border-color:color-mix(in srgb,var(--invt) 25%,transparent)}
+@media(max-width:860px){.c7,.c5,.c6{grid-column:span 12}}
+.eco{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+@media(max-width:860px){.eco{grid-template-columns:1fr}}
+.flow{list-style:none;margin:0;padding:0 0 0 30px;position:relative}
+.flow::before{content:"";position:absolute;left:9px;top:12px;bottom:12px;width:1px;background:color-mix(in srgb,var(--invt) 30%,transparent)}
+.flow li{position:relative;padding:.9rem 0}
+.flow button{all:unset;cursor:pointer;display:block;width:100%;font-weight:700;letter-spacing:.08em;font-size:.85rem;text-transform:uppercase;padding:.3rem 0}
+.flow li::before{content:"";position:absolute;left:-26px;top:1.35rem;width:11px;height:11px;border-radius:50%;border:1px solid var(--acc);background:var(--inv);transition:.3s}
+.flow li.on::before{background:var(--acc);box-shadow:0 0 0 6px color-mix(in srgb,var(--acc) 25%,transparent)}
+.flow p{max-height:0;overflow:hidden;opacity:0;transition:.4s;font-size:.95rem;color:color-mix(in srgb,var(--invt) 70%,transparent)}
+.flow li.on p{max-height:120px;opacity:1;margin-top:.3rem}
+.flow li:focus-within button,.flow button:hover{color:var(--acc)}
+.steps{margin-top:3rem;position:relative;padding-left:2.5rem}
+.steps::before,.steps i{content:"";position:absolute;left:0;top:0;width:1px;height:100%;background:var(--line)}
+.steps i{background:var(--acc);height:var(--p,0%);transition:height .2s}
+.step{padding:0 0 2.5rem;position:relative}
+.step::before{content:"";position:absolute;left:-2.5rem;top:.6rem;width:9px;height:9px;margin-left:-4px;border-radius:50%;background:var(--bg);border:1px solid var(--acc)}
+.step b{color:var(--acc);font-size:.8rem;letter-spacing:.1em}
+.step h3{font-size:1.8rem;margin:.2rem 0 .4rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:3rem}
+.grid3>div{padding:2rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid3 h3{margin-bottom:.6rem}
+@media(max-width:860px){.grid3{grid-template-columns:1fr 1fr}}@media(max-width:560px){.grid3{grid-template-columns:1fr}}
+.empty{border:1px dashed var(--line);padding:clamp(2.5rem,7vw,5rem);text-align:center;margin-top:2.5rem}
+.slots{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.5rem}
+.slot{aspect-ratio:3/2;border:1px dashed var(--line);display:grid;place-items:center;color:var(--mut);font-size:.8rem}
+@media(max-width:700px){.slots{grid-template-columns:1fr 1fr}}
+.team{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+@media(max-width:700px){.team{grid-template-columns:1fr}}
+.ph{aspect-ratio:4/3;background:var(--bg2);border:1px dashed var(--line);display:grid;place-items:center;color:var(--mut);font-size:.8rem;margin-bottom:1rem}
+.path{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:1.5rem;font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+.path span:not(.ar){border-bottom:1px solid var(--acc);padding-bottom:2px}.ar{color:var(--acc)}
+form{display:grid;gap:1.2rem}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}@media(max-width:600px){.f2{grid-template-columns:1fr}}
+label{display:block;font-size:.85rem;font-weight:600;margin-bottom:.4rem}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:.85rem 1rem;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px}
+input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{border-color:#c0392b}
+.err{color:#c0392b;font-size:.8rem;min-height:1em;margin-top:.3rem}
+.ok{border:1px solid var(--acc);padding:2rem;border-radius:4px}
+.foot{border-top:1px solid var(--line);padding:3.5rem 0 2rem}
+.fg{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem}
+.fg ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem;font-size:.9rem}
+.fg a{text-decoration:none;color:var(--mut)}.fg a:hover{color:var(--ink)}
+.pg{animation:in .5s both}@keyframes in{from{opacity:0;transform:translateY(10px)}}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.v{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--ink);color:var(--bg);padding:.5rem 1rem;z-index:99}
+.ptop{padding:clamp(3rem,8vw,6rem) 0 0}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header id="hd"><div class="w nav">
+<a class="logo" href="#/" aria-label="Windsor & Co. home"><!-- Placeholder mark: replace with official logo file -->
+<svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x=".75" y=".75" width="32.5" height="32.5"/><path d="M7 10l5 14 5-11 5 11 5-14"/><circle cx="17" cy="13" r="1.6" fill="#9a7b4f" stroke="none"/></svg>Windsor &amp; Co.</a>
+<button class="burger" id="bg" aria-label="Toggle menu" aria-expanded="false" aria-controls="nv">☰</button>
+<nav class="links" id="nv" aria-label="Main"></nav>
+</div></header>
+<main id="main" tabindex="-1"></main>
+<footer class="foot"><div class="w"><div class="fg">
+<div><b style="font-size:1.3rem">Windsor &amp; Co.</b><p class="mut">Connecting Ideas. Creating Opportunities.</p>
+<p class="mut" style="margin-top:1rem;font-size:.9rem">[Official Email] · [Phone Number]</p></div>
+<ul id="fn"></ul>
+<ul><li><a href="#" data-ph>Facebook [URL]</a></li><li><a href="#" data-ph>LinkedIn [URL]</a></li><li><a href="#" data-ph>Instagram [URL]</a></li></ul>
+</div><p class="mut" style="margin-top:3rem;font-size:.85rem">© 2026 Windsor &amp; Co. All rights reserved.</p></div></footer>
+
+<script>
+/* ===== EDITABLE CONTENT ===== */
+const SITE={nav:[["Home","/"],["About","/about"],["Services","/services"],["Programs","/programs"],["Partnerships","/partnerships"],["Projects","/projects"],["Contact","/contact"]]};
+const SERVICES=[
+{n:"01",t:"Educational Programs",d:"Practical technology and digital skill programs for educational communities.",tags:["Python","UI/UX","AI chatbot design","Digital skills","Emerging technology"],c:"c7"},
+{n:"02",t:"Events & Workshops",d:"Support for educational, community and technology-focused events.",tags:["Event coordination","Workshop coordination","Speakers","Branding","Audience engagement","Promotion"],c:"c5"},
+{n:"03",t:"Sponsorship & Brand Partnerships",d:"Helping companies and organizations find sponsorship and partnership opportunities that fit.",tags:["Sponsorship strategy","Sponsor outreach","Event branding","Corporate visibility","Student engagement"],c:"c5"},
+{n:"04",t:"Strategic Connections",d:"Relevant introductions between businesses, event organizers, institutions, communities and sponsors.",tags:["Businesses","Organizers","Institutions","Communities","Sponsors"],c:"c7"}];
+const PROGRAMS=["Python Programming","UI/UX Design","AI Chatbot Design","Digital Technology"];
+const PROJECTS=[]; // {title,category,date,description,partner,images:[],gallery:[],outcomes:[],cta:{label,href}}
+const PARTNERS=[]; // {name,logo,url}
+const TEAM=[{name:"[Partner Name]",role:"[Role]",photo:"",bio:"[Short bio]",linkedin:"",email:""},{name:"[Partner Name]",role:"[Role]",photo:"",bio:"[Short bio]",linkedin:"",email:""}];
+const ECO=[["Event organizers","Communities and organizers with events that need support and visibility."],["Windsor & Co.","We learn what each side needs and shape a partnership structure that fits."],["Corporate partners","Companies looking for relevant events, audiences and community engagement."],["Students & communities","The people who take part, learn and build."],["Opportunities","Programs, collaborations and relationships that grow from a good match."]];
+const STEPS=[["Discover","Understand the objectives, audience and needs."],["Design","Develop the appropriate program, event or partnership structure."],["Connect","Identify relevant organizations, communities and partners."],["Execute","Support implementation of the agreed initiative."],["Grow","Build long-term relationships and explore future opportunities."]];
+const WHY=[["Meaningful Connections","We focus on relationships that create value for both sides."],["Practical Experiences","We emphasize practical learning and real-world engagement."],["Community Access","We work with educational and community audiences."],["Flexible Collaboration","Partnerships are shaped around each organization's objectives."],["Long-Term Relationships","We aim to build relationships rather than one-off transactions."],["Emerging Opportunities","We connect organizations with new ideas, technologies and audiences."]];
+const INQ=["Educational Program","Workshop","Event Partnership","Sponsorship","Corporate Collaboration","Strategic Partnership","General Inquiry"];
+
+/* ===== HELPERS ===== */
+const A='<span aria-hidden="true">→</span>';
+const btn=(t,h,g)=>`<a class="btn ${g?'ghost':''}" href="#${h}">${t} ${A}</a>`;
+const cta=()=>`<section class="dark"><div class="w rv"><h2 style="max-width:14ch">Let's Build Something Worth Connecting.</h2><p class="lead">Whether you're looking to organize an educational program, support an event, reach a student community or explore a new partnership, let's start a conversation.</p><div class="row">${btn("Start a Conversation","/contact").replace('class="btn "','class="btn" style="background:var(--bg);color:var(--ink);border-color:var(--bg)"')}${btn("Explore Services","/services",1).replace('class="btn ghost"','class="btn ghost" style="color:var(--invt);border-color:var(--invt)"')}</div></div></section>`;
+const head=(e,h,p)=>`<section class="ptop" style="padding-bottom:0"><div class="w"><div class="eyebrow">${e}</div><h1 style="font-size:clamp(2.2rem,6.5vw,4.8rem);max-width:16ch">${h}</h1>${p?`<p class="lead">${p}</p>`:""}</div></section>`;
+const svcCards=(dark)=>`<div class="svc">${SERVICES.map(s=>`<article class="card rv ${s.c}"><span class="n">${s.n}</span><h3>${s.t}</h3><p class="mut">${s.d}</p><ul>${s.tags.map(t=>`<li>${t}</li>`).join("")}</ul></article>`).join("")}</div>`;
+const ecoSec=()=>`<section class="dark"><div class="w eco"><div class="rv"><div class="eyebrow">Connection ecosystem</div><h2>Relevant partnerships, made easier.</h2><p class="lead">We are building a network. Windsor &amp; Co. aims to make partnerships easier by understanding what different organizations actually need.</p></div>
+<ol class="flow rv" id="flow">${ECO.map((e,i)=>`<li class="${i==1?'on':''}"><button aria-expanded="${i==1}">${e[0]}</button><p>${e[1]}</p></li>`).join("")}</ol></div></section>`;
+const how=()=>`<section><div class="w"><div class="eyebrow">How we work</div><h2>Idea to opportunity, in five steps.</h2><div class="steps" id="steps"><i></i>${STEPS.map((s,i)=>`<div class="step rv"><b>0${i+1}</b><h3>${s[0]}</h3><p class="mut">${s[1]}</p></div>`).join("")}</div></div></section>`;
+const why=()=>`<section class="alt"><div class="w"><div class="eyebrow">Why Windsor &amp; Co.</div><h2 style="max-width:18ch">Principles we work by.</h2><div class="grid3">${WHY.map(w=>`<div class="rv"><h3>${w[0]}</h3><p class="mut">${w[1]}</p></div>`).join("")}</div></div></section>`;
+const partners=()=>`<section><div class="w rv"><h2 style="max-width:22ch">Building meaningful partnerships across education, technology, events and business.</h2>${PARTNERS.length?`<div class="slots">${PARTNERS.map(p=>`<a class="slot" href="${p.url||'#'}"><img src="${p.logo}" alt="${p.name}" loading="lazy" style="max-width:80%"></a>`).join("")}</div>`:`<div class="slots" aria-label="Partner logos will appear here">${"<div class='slot'>Partner logo</div>".repeat(4)}</div>`}</div></section>`;
+
+/* ===== PAGES ===== */
+const PAGES={
+"/":{t:"Windsor & Co. | Connecting Ideas. Creating Opportunities.",d:"Windsor & Co. connects organizations, educational communities and businesses through workshops, events, sponsorships and strategic partnerships.",
+h:()=>`<section id="hero"><canvas id="cv" aria-hidden="true"></canvas><div class="w"><div class="eyebrow">Bangladesh · Education · Events · Partnerships</div><h1>Connecting Ideas.<br><span>Creating Opportunities.</span></h1><p class="lead">Windsor &amp; Co. builds meaningful connections between organizations, communities and emerging opportunities through education, events, partnerships and strategic collaboration.</p><div class="row">${btn("Work With Us","/contact")}${btn("Explore Services","/services",1)}</div></div></section>
+<section class="alt"><div class="w split"><div class="rv"><div class="eyebrow">Introduction</div><h2>Where People, Organizations and Opportunities Meet.</h2><p class="mut" style="margin-top:1.5rem">We're an early-stage agency. We run practical programs with educational communities, support events, and help companies find sponsorship and partnership opportunities that make sense for them.</p></div>
+<div class="pillars rv">${[["Education","Practical workshops in technology and digital skills."],["Events","Coordination and support for community and learning events."],["Partnerships","Sponsorships and collaborations shaped to each goal."],["Opportunities","What grows when the right people meet."]].map((p,i)=>`<div class="pil"><b>0${i+1}</b><h3>${p[0]}</h3><p class="mut">${p[1]}</p></div>`).join("")}</div></div></section>
+<section><div class="w"><div class="eyebrow">Services</div><h2 style="max-width:18ch">Four ways we connect.</h2>${svcCards()}<div class="row">${btn("All services","/services",1)}</div></div></section>
+${ecoSec()}${how()}${why()}${partners()}${cta()}`},
+"/about":{t:"About | Windsor & Co.",d:"Windsor & Co. was created around one idea: meaningful connections create opportunities.",
+h:()=>`${head("About","Meaningful connections create opportunities.")}
+<section><div class="w split"><div class="rv"><h2>Our Story</h2></div><div class="rv"><p class="lead" style="margin-top:0">Windsor &amp; Co. was created around a simple idea: meaningful connections create opportunities. We aim to connect organizations, businesses, educational institutions, communities and events through practical programs, events, partnerships and strategic collaboration.</p><p class="mut" style="margin-top:1.2rem">We're at the beginning of this work, and we'd rather say so plainly.</p><div class="path"><span>Education</span><span class="ar">→</span><span>Engagement</span><span class="ar">→</span><span>Partnership</span><span class="ar">→</span><span>Growth</span></div></div></div></section>
+<section class="alt"><div class="w svc"><article class="card rv c6"><span class="n">VISION</span><p style="margin-top:1rem;font-size:1.3rem;font-weight:600;letter-spacing:-.01em">To become a trusted bridge connecting businesses, educational institutions, communities and emerging opportunities.</p></article><article class="card rv c6"><span class="n">MISSION</span><p style="margin-top:1rem;font-size:1.3rem;font-weight:600;letter-spacing:-.01em">To create practical educational experiences, facilitate valuable partnerships and help organizations connect with the right audiences and opportunities.</p></article></div></section>
+<section><div class="w"><div class="eyebrow">Leadership</div><h2>Two partners, one shared direction.</h2><div class="team">${TEAM.map(m=>`<article class="rv">${m.photo?`<img src="${m.photo}" alt="${m.name}" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover">`:'<div class="ph">Photo</div>'}<h3>${m.name}</h3><p class="mut">${m.role}</p><p style="margin-top:.6rem">${m.bio}</p></article>`).join("")}</div></div></section>${why()}${cta()}`},
+"/services":{t:"Services | Windsor & Co.",d:"Educational programs, events and workshops, sponsorship and brand partnerships, and strategic connections.",
+h:()=>`${head("Services","Education, events and partnerships. Connected.","Four areas of work, one aim: the right people in the same room.")}<section><div class="w">${svcCards()}</div></section>${ecoSec()}${how()}${cta()}`},
+"/programs":{t:"Programs | Windsor & Co.",d:"Practical technology programs for schools, universities and student communities. Six sessions, three online and three offline.",
+h:()=>`${head("Programs","Learning That Goes Beyond the Classroom.","A practical workshop format for schools, universities and student communities, adapted to each institution.")}
+<section><div class="w split"><div class="rv"><h2>6 practical sessions.</h2><p class="path" style="font-size:1rem"><span>3 online</span><span class="ar">+</span><span>3 offline</span></p></div><div class="rv"><div class="grid3" style="grid-template-columns:1fr 1fr;margin-top:0">${PROGRAMS.map((p,i)=>`<div><b style="color:var(--acc);font-size:.8rem">0${i+1}</b><h3>${p}</h3></div>`).join("")}</div><p class="mut" style="margin-top:1.5rem">Programs can be adapted for institutions. Topics, schedule and format are agreed together. Programs can be structured around an accessible student participation fee depending on the institution, format and program requirements.</p><div class="row">${btn("Bring Windsor & Co. to Your Institution","/contact")}</div></div></div></section>${cta()}`},
+"/partnerships":{t:"Partnerships | Windsor & Co.",d:"Sponsorship and partnership opportunities across workshops, events and student communities.",
+h:()=>`${head("Partnerships","Put Your Brand Where People Build the Future.","Collaborate through sponsorship, workshops, events, educational programs, student engagement and community initiatives. Recruitment exposure where appropriate.")}
+<section><div class="w split"><div class="rv"><h2>Possible visibility</h2></div><div class="rv"><div class="grid3" style="grid-template-columns:1fr 1fr;margin-top:0">${["Banners","Posters","Reels","Social media","Event branding","On-ground activations","Partnership recognition"].map(x=>`<div><h3 style="font-size:1.05rem">${x}</h3></div>`).join("")}</div><p class="mut" style="margin-top:1.5rem">Partnership benefits are customized according to the event, audience and objectives. We don't promise specific reach, leads, hires or returns. Commercial arrangements are flexible and based on the scope and structure of each partnership.</p><div class="row">${btn("Become a Partner","/contact")}</div></div></div></section>${ecoSec()}${cta()}`},
+"/projects":{t:"Projects | Windsor & Co.",d:"Windsor & Co. initiatives and collaborations will appear here as they develop.",
+h:()=>`${head("Projects","Our story is just beginning.")}<section><div class="w">${PROJECTS.length?`<div class="svc">${PROJECTS.map(p=>`<article class="card c6"><span class="n">${p.category} · ${p.date}</span><h3>${p.title}</h3><p class="mut">${p.description}</p>${p.partner?`<p>Partner: ${p.partner}</p>`:""}${(p.images||[]).map(i=>`<img src="${i}" alt="${p.title}" loading="lazy" style="width:100%;margin-top:1rem">`).join("")}${p.cta?`<div class="row">${btn(p.cta.label,p.cta.href)}</div>`:""}</article>`).join("")}</div>`:`<div class="empty rv"><h2>Our story is just beginning.</h2><p class="lead" style="margin-inline:auto">New Windsor &amp; Co. initiatives and collaborations will appear here as they develop.</p><div class="row" style="justify-content:center">${btn("Start a Conversation","/contact")}</div></div>`}</div></section>${partners()}`},
+"/contact":{t:"Contact | Windsor & Co.",d:"Start a conversation with Windsor & Co. about programs, events, sponsorship or partnerships.",
+h:()=>`${head("Contact","Let's Start a Conversation.")}<section><div class="w split"><div class="rv"><p class="mut">Tell us a little about your organization and what you have in mind.</p><p style="margin-top:1.5rem">[Official Email]<br>[Phone Number]</p></div>
+<div class="rv"><form id="cf" novalidate><div class="f2"><div><label for="fn1">Full Name *</label><input id="fn1" name="name" autocomplete="name" required><div class="err"></div></div><div><label for="fo">Organization</label><input id="fo" name="org" autocomplete="organization"><div class="err"></div></div></div>
+<div class="f2"><div><label for="fd">Designation</label><input id="fd" name="role"><div class="err"></div></div><div><label for="fe">Email *</label><input id="fe" name="email" type="email" autocomplete="email" required><div class="err"></div></div></div>
+<div class="f2"><div><label for="fp">Phone</label><input id="fp" name="phone" type="tel" autocomplete="tel"><div class="err"></div></div><div><label for="fi">Inquiry Type *</label><select id="fi" name="type" required><option value="">Select…</option>${INQ.map(i=>`<option>${i}</option>`).join("")}</select><div class="err"></div></div></div>
+<div><label for="fm">Message *</label><textarea id="fm" name="msg" rows="5" required minlength="10"></textarea><div class="err"></div></div>
+<div><button class="btn" type="submit" id="sb">Send Inquiry ${A}</button></div></form><div class="ok" id="okm" hidden role="status"><h3>Thank you.</h3><p class="mut">Your inquiry has been received. We'll be in touch.</p></div></div></div></section>`}
+};
+
+/* ===== ROUTER ===== */
+const $=s=>document.querySelector(s),main=$("#main");
+$("#nv").innerHTML=SITE.nav.map(n=>`<a href="#${n[1]}" data-r="${n[1]}">${n[0]}</a>`).join("")+`<a class="btn" href="#/contact">Work With Us ${A}</a>`;
+$("#fn").innerHTML=SITE.nav.map(n=>`<li><a href="#${n[1]}">${n[0]}</a></li>`).join("");
+const rm=matchMedia("(prefers-reduced-motion:reduce)");
+function route(){
+ const k=location.hash.slice(1)||"/",p=PAGES[k]||PAGES["/"],key=PAGES[k]?k:"/";
+ document.title=p.t;document.querySelector('meta[name=description]').content=p.d;
+ main.innerHTML=`<div class="pg">${p.h()}</div>`;scrollTo(0,0);
+ document.querySelectorAll("#nv a[data-r]").forEach(a=>a.toggleAttribute("aria-current",a.dataset.r===key)||0);
+ document.querySelectorAll("#nv a[data-r]").forEach(a=>a.dataset.r===key?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current"));
+ $("#nv").classList.remove("o");$("#bg").setAttribute("aria-expanded","false");
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("v");io.unobserve(e.target)}}),{threshold:.12});
+ main.querySelectorAll(".rv").forEach(e=>io.observe(e));
+ hero();flow();steps();form();
+}
+addEventListener("hashchange",route);
+$("#bg").onclick=()=>{const o=$("#nv").classList.toggle("o");$("#bg").setAttribute("aria-expanded",o)};
+addEventListener("scroll",()=>$("#hd").classList.toggle("s",scrollY>10),{passive:true});
+document.querySelectorAll("[data-ph]").forEach(a=>a.onclick=e=>e.preventDefault());
+
+/* ===== INTERACTIONS ===== */
+function flow(){const f=$("#flow");if(!f)return;f.querySelectorAll("li").forEach(li=>li.querySelector("button").onclick=()=>{f.querySelectorAll("li").forEach(x=>{x.classList.remove("on");x.querySelector("button").setAttribute("aria-expanded","false")});li.classList.add("on");li.querySelector("button").setAttribute("aria-expanded","true")})}
+function steps(){const s=$("#steps");if(!s)return;const u=()=>{const r=s.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.6-r.top)/r.height));s.style.setProperty("--p",p*100+"%")};addEventListener("scroll",u,{passive:true});u()}
+function form(){const f=$("#cf");if(!f)return;
+ const chk=el=>{let m="";const v=el.value.trim();if(el.required&&!v)m="This field is required.";else if(el.type==="email"&&v&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v))m="Enter a valid email address.";else if(el.name==="msg"&&v&&v.length<10)m="Please add a little more detail.";else if(el.type==="tel"&&v&&!/^[+\d][\d\s\-()]{6,}$/.test(v))m="Enter a valid phone number.";
+  el.setAttribute("aria-invalid",!!m);const e=el.parentNode.querySelector(".err");e.textContent=m;e.id=el.id+"e";el.setAttribute("aria-describedby",e.id);return!m};
+ f.querySelectorAll("input,select,textarea").forEach(el=>el.onblur=()=>chk(el));
+ f.onsubmit=ev=>{ev.preventDefault();const bad=[...f.elements].filter(e=>e.name&&!chk(e));if(bad.length){bad[0].focus();return}
+  const b=$("#sb");b.disabled=true;b.textContent="Sending…";
+  /* TODO: connect to a real endpoint (e.g. Formspree/API). Currently simulated. */
+  setTimeout(()=>{f.hidden=true;$("#okm").hidden=false;$("#okm").focus()},900)}}
+function hero(){const c=$("#cv");if(!c)return;const x=c.getContext("2d");let W,H,N=[],raf;
+ const rs=()=>{const d=devicePixelRatio||1;W=c.clientWidth;H=c.clientHeight;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);
+  const n=Math.round(Math.min(46,W/24));N=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25}))};
+ const col=()=>getComputedStyle(document.documentElement).getPropertyValue("--acc").trim()||"#9a7b4f";
+ const dr=()=>{x.clearRect(0,0,W,H);const a=col();
+  N.forEach((p,i)=>{if(!rm.matches){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}
+   for(let j=i+1;j<N.length;j++){const q=N[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<140){x.globalAlpha=(1-d/140)*.35;x.strokeStyle=a;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}
+   x.globalAlpha=.7;x.fillStyle=a;x.beginPath();x.arc(p.x,p.y,2,0,7);x.fill()});
+  if(!rm.matches&&document.body.contains(c))raf=requestAnimationFrame(dr)};
+ rs();dr();new ResizeObserver(()=>{rs();if(rm.matches)dr()}).observe(c)}
+route();
+</script>
+</body>
+</html>
